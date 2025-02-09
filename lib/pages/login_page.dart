@@ -39,7 +39,7 @@ class _LoginPageState extends State<LoginPage> {
                         Expanded(
                           flex: 5,
                           child: Image.network(
-                            "https://imgs.search.brave.com/KwBNMFMNQz7oTk8WhyPDoILTKpqP4ViptQu3azQnPVg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hYy1s/YW5kaW5nLXBhZ2Vz/LXVzZXItdXBsb2Fk/cy1wcm9kdWN0aW9u/LnMzLmFtYXpvbmF3/cy5jb20vMDAwMDA1/MTY1Ny81N2E5OTYx/My1lMTU4LTQ3MmEt/ODAzNy03Nzg5NWVl/ODk5MjMucG5n",
+                            "https://hermes.digitalinnovation.one/assets/diome/logo.png",
                           ),
                         ),
                         Expanded(

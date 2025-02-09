@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:trilhapp/pages/dados_cadastrais.dart';
-import 'package:trilhapp/pages/pagina_1.dart';
+import 'package:trilhapp/pages/card_page.dart';
 import 'package:trilhapp/pages/pagina_2.dart';
 import 'package:trilhapp/pages/pagina_3.dart';
+import 'package:trilhapp/shared/widgets/custom_drawer.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -21,51 +22,7 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           title: const Text("Meu App"),
         ),
-        drawer: Drawer(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                InkWell(
-                  onTap: () {
-                    Navigator.pop(context);
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const DadosCadastrais(),
-                      ),
-                    );
-                  },
-                  child: Container(
-                      padding: const EdgeInsets.symmetric(vertical: 5),
-                      width: double.infinity,
-                      child: const Text("Dados Cadastrais")),
-                ),
-                const Divider(),
-                const SizedBox(height: 10),
-                InkWell(
-                  onTap: () {},
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(vertical: 5),
-                    width: double.infinity,
-                    child: const Text("Termos de uso e privacidade"),
-                  ),
-                ),
-                const Divider(),
-                const SizedBox(height: 10),
-                InkWell(
-                  onTap: () {},
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(vertical: 5),
-                    width: double.infinity,
-                    child: const Text("Configurações"),
-                  ),
-                )
-              ],
-            ),
-          ),
-        ),
+        drawer: const CustomDrawer(),
         body: Column(
           children: [
             Expanded(
@@ -78,7 +35,7 @@ class _HomePageState extends State<HomePage> {
                 },
                 scrollDirection: Axis.horizontal,
                 children: const [
-                  Pagina1Page(),
+                  CardPage(),
                   Pagina2Page(),
                   Pagina3Page(),
                 ],

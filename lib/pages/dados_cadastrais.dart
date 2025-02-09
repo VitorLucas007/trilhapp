@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:trilhapp/repositories/linguagens_repository.dart';
 import 'package:trilhapp/repositories/nivel_repository.dart';
-import 'package:trilhapp/shared/text_label.dart';
+import 'package:trilhapp/shared/widgets/text_label.dart';
 
 class DadosCadastrais extends StatefulWidget {
   const DadosCadastrais({super.key});

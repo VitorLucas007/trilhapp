@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:trilhapp/pages/dados_cadastrais.dart';
 import 'package:trilhapp/pages/card_page.dart';
-import 'package:trilhapp/pages/pagina_2.dart';
-import 'package:trilhapp/pages/pagina_3.dart';
+import 'package:trilhapp/pages/image_assets.dart';
+import 'package:trilhapp/pages/list_view_h.dart';
+import 'package:trilhapp/pages/list_view_horizontal_page.dart';
+import 'package:trilhapp/pages/tarefa_page.dart';
 import 'package:trilhapp/shared/widgets/custom_drawer.dart';
 
 class HomePage extends StatefulWidget {
@@ -36,12 +37,15 @@ class _HomePageState extends State<HomePage> {
                 scrollDirection: Axis.horizontal,
                 children: const [
                   CardPage(),
-                  Pagina2Page(),
-                  Pagina3Page(),
+                  ImageAssetsPage(),
+                  ListViewVPage(),
+                  ListViewHorizontalPage(),
+                  TarefaPage(),
                 ],
               ),
             ),
             BottomNavigationBar(
+              type: BottomNavigationBarType.fixed,
               onTap: (value) {
                 controller.jumpToPage(value);
               },
@@ -64,7 +68,19 @@ class _HomePageState extends State<HomePage> {
                   icon: Icon(
                     Icons.favorite,
                   ),
-                )
+                ),
+                BottomNavigationBarItem(
+                  label: "Lista",
+                  icon: Icon(
+                    Icons.list,
+                  ),
+                ),
+                BottomNavigationBarItem(
+                  label: "Tarefas",
+                  icon: Icon(
+                    Icons.task,
+                  ),
+                ),
               ],
             )
           ],

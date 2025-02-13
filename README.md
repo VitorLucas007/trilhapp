@@ -1,16 +1,18 @@
 # trilhapp
 
-A new Flutter project.
+O Projeto foi desenvolvido para estudos no framework flutter
 
-## Getting Started
+Desenvolvido numa trilha de flutter da  [DIO](https://web.dio.me/)
 
-This project is a starting point for a Flutter application.
+### Oque foi estudado ?
+1- Desevolver alguns componentes 
 
-A few resources to get you started if this is your first Flutter project:
+2- Tela de login, paginas, drawer e navegação
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3- Interação com usuário
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4- Exibição de dados
+
+
+
+
